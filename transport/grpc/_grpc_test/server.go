@@ -6,9 +6,9 @@ import (
 
 	oldcontext "golang.org/x/net/context"
 
-	"github.com/go-kit/kit/endpoint"
-	grpctransport "github.com/go-kit/kit/transport/grpc"
-	"github.com/go-kit/kit/transport/grpc/_grpc_test/pb"
+	"github.com/rueian/kit/endpoint"
+	grpctransport "github.com/rueian/kit/transport/grpc"
+	"github.com/rueian/kit/transport/grpc/_grpc_test/pb"
 )
 
 type service struct{}

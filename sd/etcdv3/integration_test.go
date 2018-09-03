@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kit/kit/endpoint"
-	"github.com/go-kit/kit/log"
-	"github.com/go-kit/kit/sd"
+	"github.com/rueian/kit/endpoint"
+	"github.com/rueian/kit/log"
+	"github.com/rueian/kit/sd"
 )
 
 func runIntegration(settings integrationSettings, client Client, service Service, t *testing.T) {

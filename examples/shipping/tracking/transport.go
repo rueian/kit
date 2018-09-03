@@ -8,10 +8,10 @@ import (
 
 	"github.com/gorilla/mux"
 
-	kitlog "github.com/go-kit/kit/log"
-	kithttp "github.com/go-kit/kit/transport/http"
+	kitlog "github.com/rueian/kit/log"
+	kithttp "github.com/rueian/kit/transport/http"
 
-	"github.com/go-kit/kit/examples/shipping/cargo"
+	"github.com/rueian/kit/examples/shipping/cargo"
 )
 
 // MakeHandler returns a handler for the tracking service.

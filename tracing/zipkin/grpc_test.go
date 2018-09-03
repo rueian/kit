@@ -10,9 +10,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/go-kit/kit/endpoint"
-	kitzipkin "github.com/go-kit/kit/tracing/zipkin"
-	grpctransport "github.com/go-kit/kit/transport/grpc"
+	"github.com/rueian/kit/endpoint"
+	kitzipkin "github.com/rueian/kit/tracing/zipkin"
+	grpctransport "github.com/rueian/kit/transport/grpc"
 )
 
 type dummy struct{}

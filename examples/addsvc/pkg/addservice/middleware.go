@@ -3,8 +3,8 @@ package addservice
 import (
 	"context"
 
-	"github.com/go-kit/kit/log"
-	"github.com/go-kit/kit/metrics"
+	"github.com/rueian/kit/log"
+	"github.com/rueian/kit/metrics"
 )
 
 // Middleware describes a service (as opposed to endpoint) middleware.

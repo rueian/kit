@@ -9,12 +9,12 @@ import (
 
 	consulapi "github.com/hashicorp/consul/api"
 
-	"github.com/go-kit/kit/endpoint"
-	"github.com/go-kit/kit/examples/profilesvc"
-	"github.com/go-kit/kit/log"
-	"github.com/go-kit/kit/sd"
-	"github.com/go-kit/kit/sd/consul"
-	"github.com/go-kit/kit/sd/lb"
+	"github.com/rueian/kit/endpoint"
+	"github.com/rueian/kit/examples/profilesvc"
+	"github.com/rueian/kit/log"
+	"github.com/rueian/kit/sd"
+	"github.com/rueian/kit/sd/consul"
+	"github.com/rueian/kit/sd/lb"
 )
 
 // New returns a service that's load-balanced over instances of profilesvc found

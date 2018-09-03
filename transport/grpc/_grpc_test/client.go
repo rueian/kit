@@ -5,9 +5,9 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/go-kit/kit/endpoint"
-	grpctransport "github.com/go-kit/kit/transport/grpc"
-	"github.com/go-kit/kit/transport/grpc/_grpc_test/pb"
+	"github.com/rueian/kit/endpoint"
+	grpctransport "github.com/rueian/kit/transport/grpc"
+	"github.com/rueian/kit/transport/grpc/_grpc_test/pb"
 )
 
 type clientBinding struct {

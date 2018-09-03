@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-kit/kit/log"
+	"github.com/rueian/kit/log"
 	"github.com/hudl/fargo"
 )
 

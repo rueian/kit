@@ -10,10 +10,10 @@ import (
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
 	"github.com/aws/aws-sdk-go/service/cloudwatch/cloudwatchiface"
 
-	"github.com/go-kit/kit/log"
-	"github.com/go-kit/kit/metrics"
-	"github.com/go-kit/kit/metrics/generic"
-	"github.com/go-kit/kit/metrics/internal/lv"
+	"github.com/rueian/kit/log"
+	"github.com/rueian/kit/metrics"
+	"github.com/rueian/kit/metrics/generic"
+	"github.com/rueian/kit/metrics/internal/lv"
 	"strconv"
 )
 

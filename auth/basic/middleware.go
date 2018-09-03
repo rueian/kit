@@ -10,8 +10,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/go-kit/kit/endpoint"
-	httptransport "github.com/go-kit/kit/transport/http"
+	"github.com/rueian/kit/endpoint"
+	httptransport "github.com/rueian/kit/transport/http"
 )
 
 // AuthError represents an authorization error.

@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/go-kit/kit/log"
+	"github.com/rueian/kit/log"
 )
 
 func loggingMiddleware(logger log.Logger) ServiceMiddleware {

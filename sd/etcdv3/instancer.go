@@ -1,9 +1,9 @@
 package etcdv3
 
 import (
-	"github.com/go-kit/kit/log"
-	"github.com/go-kit/kit/sd"
-	"github.com/go-kit/kit/sd/internal/instance"
+	"github.com/rueian/kit/log"
+	"github.com/rueian/kit/sd"
+	"github.com/rueian/kit/sd/internal/instance"
 )
 
 // Instancer yields instances stored in a certain etcd keyspace. Any kind of

@@ -7,13 +7,13 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/go-kit/kit/circuitbreaker"
-	"github.com/go-kit/kit/endpoint"
-	kithttp "github.com/go-kit/kit/transport/http"
+	"github.com/rueian/kit/circuitbreaker"
+	"github.com/rueian/kit/endpoint"
+	kithttp "github.com/rueian/kit/transport/http"
 
-	"github.com/go-kit/kit/examples/shipping/cargo"
-	"github.com/go-kit/kit/examples/shipping/location"
-	"github.com/go-kit/kit/examples/shipping/voyage"
+	"github.com/rueian/kit/examples/shipping/cargo"
+	"github.com/rueian/kit/examples/shipping/location"
+	"github.com/rueian/kit/examples/shipping/voyage"
 )
 
 type proxyService struct {
