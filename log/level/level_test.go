@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/go-kit/kit/log"
-	"github.com/go-kit/kit/log/level"
+	"github.com/rueian/kit/log"
+	"github.com/rueian/kit/log/level"
 )
 
 func TestVariousLevels(t *testing.T) {

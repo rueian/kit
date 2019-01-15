@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kit/kit/endpoint"
-	"github.com/go-kit/kit/log"
+	"github.com/rueian/kit/endpoint"
+	"github.com/rueian/kit/log"
 )
 
 func TestEndpointCache(t *testing.T) {

@@ -2,7 +2,7 @@
 // as one of the other types
 package convert
 
-import "github.com/go-kit/kit/metrics"
+import "github.com/rueian/kit/metrics"
 
 type counterHistogram struct {
 	c metrics.Counter
