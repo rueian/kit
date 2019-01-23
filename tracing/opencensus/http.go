@@ -19,9 +19,9 @@ func HTTPClientTrace(options ...TracerOption) kithttp.ClientOption {
 		option(&cfg)
 	}
 
-	if cfg.Sampler == nil {
-		cfg.Sampler = trace.AlwaysSample()
-	}
+	// if cfg.Sampler == nil {
+	// 	cfg.Sampler = trace.AlwaysSample()
+	// }
 
 	if !cfg.Public && cfg.HTTPPropagate == nil {
 		cfg.HTTPPropagate = &b3.HTTPFormat{}
@@ -101,9 +101,9 @@ func HTTPServerTrace(options ...TracerOption) kithttp.ServerOption {
 		option(&cfg)
 	}
 
-	if cfg.Sampler == nil {
-		cfg.Sampler = trace.AlwaysSample()
-	}
+	// if cfg.Sampler == nil {
+	// 	cfg.Sampler = trace.AlwaysSample()
+	// }
 
 	if !cfg.Public && cfg.HTTPPropagate == nil {
 		cfg.HTTPPropagate = &b3.HTTPFormat{}

@@ -22,9 +22,9 @@ func GRPCClientTrace(options ...TracerOption) kitgrpc.ClientOption {
 		option(&cfg)
 	}
 
-	if cfg.Sampler == nil {
-		cfg.Sampler = trace.AlwaysSample()
-	}
+	// if cfg.Sampler == nil {
+	// 	cfg.Sampler = trace.AlwaysSample()
+	// }
 
 	clientBefore := kitgrpc.ClientBefore(
 		func(ctx context.Context, md *metadata.MD) context.Context {
@@ -79,9 +79,9 @@ func GRPCServerTrace(options ...TracerOption) kitgrpc.ServerOption {
 		option(&cfg)
 	}
 
-	if cfg.Sampler == nil {
-		cfg.Sampler = trace.AlwaysSample()
-	}
+	// if cfg.Sampler == nil {
+	// 	cfg.Sampler = trace.AlwaysSample()
+	// }
 
 	serverBefore := kitgrpc.ServerBefore(
 		func(ctx context.Context, md metadata.MD) context.Context {
