@@ -119,7 +119,7 @@ func (s Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if err := s.enc(ctx, w, response); err != nil {
-		s.logger.Log("err", err)
+		// s.logger.Log("err", err)
 		s.errorEncoder(ctx, err, w)
 		return
 	}

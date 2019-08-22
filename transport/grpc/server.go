@@ -123,7 +123,7 @@ func (s Server) ServeGRPC(ctx context.Context, req interface{}) (retctx context.
 
 	grpcResp, err = s.enc(ctx, response)
 	if err != nil {
-		s.logger.Log("err", err)
+		// s.logger.Log("err", err)
 		return ctx, nil, err
 	}
 
