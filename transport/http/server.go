@@ -119,8 +119,10 @@ func (s Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if err := s.enc(ctx, w, response); err != nil {
-		// s.logger.Log("err", err)
-		s.errorEncoder(ctx, err, w)
+		if iw, ok := w.(*interceptingWriter); ok && !iw.Written() {
+			s.logger.Log("err", err)
+			s.errorEncoder(ctx, err, w)
+		}
 		return
 	}
 }
@@ -216,6 +218,7 @@ type Headerer interface {
 type interceptingWriter struct {
 	http.ResponseWriter
 	code    int
+	coded   bool
 	written int64
 }
 
@@ -223,6 +226,7 @@ type interceptingWriter struct {
 // initialize w.code to its default value of http.StatusOK.
 func (w *interceptingWriter) WriteHeader(code int) {
 	w.code = code
+	w.coded = true
 	w.ResponseWriter.WriteHeader(code)
 }
 
@@ -230,4 +234,8 @@ func (w *interceptingWriter) Write(p []byte) (int, error) {
 	n, err := w.ResponseWriter.Write(p)
 	w.written += int64(n)
 	return n, err
+}
+
+func (w *interceptingWriter) Written() bool {
+	return w.written > 0 || w.coded
 }
